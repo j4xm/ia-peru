@@ -1,0 +1,63 @@
+.gpt3__brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+  }
+  
+  .gpt3__brand__list {
+    position: relative;
+    display: flex;
+  }
+  
+  .gpt3__brand__list li {
+    list-style: none;
+  }
+  
+  .gpt3__brand__list li a {
+    position: relative;
+    display: flex; /* Modificado */
+    justify-content: center; /* Modificado */
+    align-items: center; /* Modificado */
+    width: 120px;
+    height: 120px;
+    background: #ccc;
+    color: #333;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 4em;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    box-shadow: 0.25px 35px rgba(0, 0, 0, 0.1);
+    transition: background 0.25s;
+  }
+  
+  .gpt3__brand__list li a.chatgpt:hover {
+    background-color: #0bb092;
+  }
+  .gpt3__brand__list li a.midjourney:hover {
+    background-color: #b1a4c9;
+  }
+  .gpt3__brand__list li a.chatbot:hover {
+    background-color: #b5fe56;
+  }
+  .gpt3__brand__list li a.brandmark:hover {
+    background-color: #fce3b2;
+  }
+  
+  .gpt3__brand__list li a img {
+    max-width: 100%; /* Modificado */
+    max-height: 100%; /* Modificado */
+  }
+
+  .gpt3__brand__list li a svg path {
+    stroke: #000; /* Establece el contorno negro inicial */
+    transition: stroke 0.25s; /* Agrega una transición suave */
+  }
+  
+  .gpt3__brand__list li a:hover svg path {
+    stroke: #fff; /* Cambia el contorno a blanco en hover */
+  }
+  
+  

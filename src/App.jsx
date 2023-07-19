@@ -1,0 +1,34 @@
+import { BrowserRouter as Router } from "react-router-dom";
+import "./App.css";
+
+import {
+  Footer,
+  Blog,
+  Possibility,
+  Features,
+  WhatGPT3,
+  Header,
+} from "./containers";
+import { CTA, Brand, Navbar } from "./components";
+
+function App() {
+  return (
+    <Router>
+      <div className="App">
+        <div className="gradient__bg">
+          <Navbar />
+          <Header />
+        </div>
+        <Brand />
+        <WhatGPT3 />
+        <Features />
+        <Possibility />
+        <CTA />
+        <Blog />
+        <Footer />
+      </div>
+    </Router>
+  );
+}
+
+export default App;
